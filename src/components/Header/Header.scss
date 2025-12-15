@@ -1,0 +1,32 @@
+/* Header styles for Pokémon theme */
+
+.navbar-pokemon {
+  background-color: #ffde00; /* Pokémon yellow */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+.navbar-pokemon .navbar-brand {
+  color: #1f2937; /* dark slate for readability */
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.navbar-pokemon .nav-link {
+  color: #1f2937;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.navbar-pokemon .nav-link:hover {
+  color: #0f172a;
+}
+
+.navbar-pokemon .nav-link.active {
+  color: #0b1220;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.navbar-pokemon .navbar-toggler {
+  border-color: rgba(0,0,0,0.1);
+}

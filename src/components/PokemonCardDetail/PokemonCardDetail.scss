@@ -1,0 +1,107 @@
+.flip-card {
+  width: 100%;
+  height: 310px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  border: 1px solid #e0e0e0;
+}
+
+.flip-card.is-flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.flip-card-front {
+//   padding: 8px;
+}
+
+.card-front-img {
+    padding-top: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+  width: 100%;
+  height: 280px;
+  object-fit: contain;
+  background: transparent;
+}
+
+.card-front-name {
+  font-weight: 600;
+}
+
+.card-back-img {
+  width: 100%;
+  height: 160px;
+  object-fit: contain;
+  background: transparent;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  text-align: left;
+
+  p {
+    margin-bottom: 0 !important;
+
+    &:last-of-type {
+      margin-bottom: .5rem !important;
+    }
+  }
+}
+
+.flip-card-back ul { padding-left: 1rem; margin: 0; }
+
+/* Distribute back content into header / body (scrollable) / footer */
+.flip-card-back .back-layout {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  width: 100%;
+  height: 100%;
+}
+
+.back-header {
+  padding: 8px 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.back-body {
+  padding: 8px 10px;
+  overflow: auto; /* allow internal scrolling when content is long */
+}
+
+.back-footer {
+  padding: 8px 10px;
+  border-top: 1px solid #eee;
+}
+
+/* Improve spacing and small typography */
+.flip-card-back h5 { margin: 0 0 6px 0; }
+.flip-card-back p { margin: 0 0 8px 0; font-size: 0.85rem; }
+.flip-card-back .small { font-size: 0.85rem; color: #444; }
+
+@media (max-width: 576px) {
+  .flip-card { width: 160px; height: 260px; }
+  .card-front-img { height: 180px; }
+}

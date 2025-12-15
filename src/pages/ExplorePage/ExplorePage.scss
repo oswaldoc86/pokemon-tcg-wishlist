@@ -1,0 +1,42 @@
+/* Styles for ExplorePage */
+
+/* Pokémon button colors for Prev (blue) and Next (yellow) */
+.btn {
+    &.btn-pokemon-primary {
+        /* Next button: Pokémon yellow */
+        background: #ffde00;
+        color: #1b1b1b;
+        border: 1px solid rgba(0,0,0,0.12);
+
+        &:disabled {
+            background: #fff176;
+            color: #e1e1e1;
+            border: 1px solid #ffde00;
+            cursor: not-allowed;
+        }
+    }
+    &.btn-pokemon-primary:hover,
+    &.btn-pokemon-primary:focus {
+        background: #ffd400;
+        box-shadow: 0 0 0 0.2rem rgba(255,222,0,0.18);
+    }
+    
+    &.btn-pokemon-secondary {
+        /* Prev button: Pokémon blue */
+        background: #3b4cca;
+        color: #ffffff;
+        border: 1px solid rgba(0,0,0,0.12);
+
+        &:disabled {
+            background: #8c9ef7;
+            color: #e1e1e1;
+            border: 1px solid #3b4cca;
+            cursor: not-allowed;
+        }
+    }
+    &.btn-pokemon-secondary:hover,
+    &.btn-pokemon-secondary:focus {
+        background: #2f3fb8;
+        box-shadow: 0 0 0 0.2rem rgba(59,76,202,0.18);
+    }
+}

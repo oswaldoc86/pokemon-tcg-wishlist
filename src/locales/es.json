@@ -1,0 +1,49 @@
+{
+  "header": {
+    "brand": "Pokémon TCG Wishlist",
+    "explore": "Explorar",
+    "collection": "Mi colección",
+    "wishlist": "Mi lista de deseos",
+    "language_en": "EN",
+    "language_es": "ES"
+  },
+  "explore": {
+    "title": "Explorar cartas",
+    "loading": "Cargando cartas...",
+    "noResults": "No se encontraron cartas.",
+    "error": "Error",
+    "prev": "Anterior",
+    "next": "Siguiente",
+    "page": "Página",
+    "pages": "páginas",
+    "filter": {
+      "placeholder": "Nombre",
+      "button": "Filtrar",
+      "nameRequired": "Introduce al menos 1 carácter",
+      "nameMin": "Introduce al menos 3 caracteres",
+      "nameTooLong": "Máx. 100 caracteres",
+      "typePlaceholder": "Tipo",
+      "typeAll": "Todos los tipos",
+      "setPlaceholder": "Set",
+      "setAll": "Todos los sets"
+    }
+  },
+  "collection": {
+    "title": "Mi colección"
+  },
+  "wishlist": {
+    "title": "Mi lista de deseos"
+  },
+  "types": {
+    "Electric": "Eléctrico",
+    "Fire": "Fuego",
+    "Water": "Agua",
+    "Grass": "Planta",
+    "Psychic": "Psíquico",
+    "Fighting": "Lucha",
+    "Darkness": "Oscuro",
+    "Metal": "Metal",
+    "Dragon": "Dragón",
+    "Colorless": "Normal"
+  }
+}
